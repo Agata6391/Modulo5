@@ -1,0 +1,50 @@
+body{
+    background-color: #17374e;
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(145deg, rgba(14,107,247,1) 0%, rgba(20,231,235,1) 79%); 
+    border-radius: 20px;
+}
+.icon{
+    padding-top: 50px;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+label{
+    color: white;
+    font-size: 18px;
+}
+.field-container input{
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    color: rgb(14,107,247,1);
+    height: 20px;
+}
+.error-message{
+    color: red;
+    margin-top: -10px;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    background-color: transparent; 
+    color: white;
+    border: solid 1px white;
+    width: 20%;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px;
+    &:hover{
+        color: rgb(14,107,247);
+        border: solid 1px rgb(14,107,247);
+    }
+}
