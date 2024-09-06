@@ -7,7 +7,7 @@ body{
     margin-top: 100px;
     width: 400px;
     height: 400px;
-    background: linear-gradient(145deg, rgba(14,107,247,1) 0%, rgba(20,231,235,1) 79%); 
+    background: linear-gradient(145deg, #0b4273 0%, #1cd1d3 79%); 
     border-radius: 20px;
 }
 .icon{
@@ -18,25 +18,26 @@ h2{
     color: white;
 }
 label{
-    color: white;
+    color: #ffffff; /* Texto blanco para contraste */ ;
     font-size: 18px;
 }
 .field-container input{
     border-radius: 10px;
     border: none;
     margin: 10px;
-    color: rgb(14,107,247,1);
+    color: #17374e;
     height: 20px;
+    background-color: #ffffff
 }
 .error-message{
     color: red;
     margin-top: -10px;
 }
 button{
-    border: none;
+    border: solid 1px #ffffff;
     border-radius: 10px;
-    background-color: transparent; 
-    color: white;
+    background-color: #0b4273;
+    color: #ffffff;
     border: solid 1px white;
     width: 20%;
     height: 25px;

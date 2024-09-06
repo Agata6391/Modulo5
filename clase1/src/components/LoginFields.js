@@ -39,7 +39,7 @@ const LoginFields = ()=>{
                     </div>
                     <div className="field-container">
                         <label htmlFor="email">Email</label>
-                        <Field type="text" id="email" name="email"/>
+                        <Field type="email" id="email" name="email"/>
                         <ErrorMessage name="email" component="div" className="error-message"/>
                     </div>
 
