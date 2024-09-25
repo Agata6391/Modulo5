@@ -1,8 +1,12 @@
 import React from "react";
 
-function ProductItem({product, dispatch}){
+
+function ProductItem({product, dispatch, setProductToEdit}){
     const handleDelete=()=>{
         dispatch({type:'DELETE_PRODUCT',payload:product.code});
+    }
+    const handleEdit = ()=>{
+        setProductToEdit(product);
     }
     return(
         <div className="product-item">
@@ -10,6 +14,7 @@ function ProductItem({product, dispatch}){
             <span>{product.code}</span>
             <span>{product.price}</span>
             <button onClick={handleDelete}>Delete</button>
+            <button onClick={handleEdit}>Editar</button>
         </div>
     );
 

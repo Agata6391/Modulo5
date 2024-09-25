@@ -1,12 +1,19 @@
-import React, {useState} from "react";
+import React, {useState, useEffect }from "react";
 
-function ProductForm ({dispatch}){
+function ProductForm ({dispatch, productToEdit}){
     const [product, setProduct] = useState({name:'', code :'',price:''});
     const [isEditing, setIsEditing]= useState(false);
+   
+    useEffect (()=>{
+        if(productToEdit){
+            setProduct(productToEdit);
+            setIsEditing(true);
+        }
+    },[productToEdit]);
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-              
+        
         if(product.price <= 0 ){
             alert('El precio no puiede ser menor a 0 o igual')
             return;
@@ -18,8 +25,9 @@ function ProductForm ({dispatch}){
         }
         setProduct({name:'', code :'',price:''});
         setIsEditing(false);
-        
-    };
+      
+    }
+    
     return(
         <form onSubmit={handleSubmit}>
             <input
