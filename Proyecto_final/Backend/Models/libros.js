@@ -1,16 +1,36 @@
-// models/libro.js
 const mongoose = require('mongoose');
-
-// Esquema de Mongoose para los libros
-const libroSchema = new mongoose.Schema({
-  nombre: String,
-  autor: String,
-  isbn: String,
-  imagen: String,
-  publicacion: String,
-  cantidadDisponible: Number,
-  genero: String,
+const Schema = mongoose.Schema;
+// Esquema de libro
+const libroSchema = new Schema({
+    nombre: {
+        type: String,
+        required: true,
+    },
+    autor: {
+        type: String,
+        required: true,
+    },
+    isbn: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    imagen: {
+        type: String,
+        required: true,
+    },
+    publicacion: {
+        type: String,
+        required: true,
+    },
+    cantidadDisponible: {
+        type: Number,
+        required: true,
+    },
+    genero: {
+        type: String,
+        required: true,
+    }
 });
 
-// Exportar el modelo "Libro"
 module.exports = mongoose.model('Libro', libroSchema);
