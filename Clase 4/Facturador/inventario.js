@@ -1,0 +1,21 @@
+const inventario = [
+    { nombre: "Café Britt", precio: 4000, cantidad: 40, descripcion: "Café premium costarricense" },
+    { nombre: "Natilla Dos Pinos", precio: 800, cantidad: 60, descripcion: "Crema agria típica para acompañar comidas" },
+    { nombre: "Arroz Tío Pelón", precio: 1500, cantidad: 100, descripcion: "Arroz blanco de grano largo" },
+    { nombre: "Frijoles Molidos Don Pedro", precio: 1200, cantidad: 70, descripcion: "Frijoles negros molidos en paquete" },
+    { nombre: "Salsa Lizano", precio: 2000, cantidad: 50, descripcion: "Salsa tradicional para acompañar comidas típicas" },
+    { nombre: "Chiky", precio: 900, cantidad: 80, descripcion: "Galletas con cobertura de chocolate" },
+    { nombre: "Leche Dos Pinos", precio: 1200, cantidad: 90, descripcion: "Leche entera en cartón" },
+    { nombre: "Fideos Roma", precio: 500, cantidad: 120, descripcion: "Fideos para sopa o pasta" },
+    { nombre: "Chocolate Sabemas", precio: 700, cantidad: 95, descripcion: "Chocolate en polvo para bebidas calientes" },
+    { nombre: "Jugo Tropical", precio: 1300, cantidad: 110, descripcion: "Jugo de frutas en caja" },
+    { nombre: "Queso Turrialba", precio: 2500, cantidad: 50, descripcion: "Queso fresco típico" },
+    { nombre: "Bomba Criolla", precio: 600, cantidad: 90, descripcion: "Condimento para tamales" },
+    { nombre: "Tortillas Bimbo", precio: 1200, cantidad: 75, descripcion: "Tortillas de maíz para tacos" },
+    { nombre: "Pan Bimbo", precio: 1400, cantidad: 100, descripcion: "Pan blanco para sándwiches" },
+    { nombre: "Refresco en Polvo Tang", precio: 500, cantidad: 130, descripcion: "Refresco en polvo de diferentes sabores" },
+    { nombre: "Chipsy", precio: 1000, cantidad: 85, descripcion: "Snack de plátano salado" },
+    { nombre: "Atún Sardimar", precio: 2000, cantidad: 120, descripcion: "Lata de atún en agua o aceite" },
+    { nombre: "Fanta Manzana", precio: 800, cantidad: 70, descripcion: "Gaseosa de manzana" },
+    { nombre: "Ron Centenario", precio: 5000, cantidad: 25, descripcion: "Ron costarricense de alta calidad" }
+];
